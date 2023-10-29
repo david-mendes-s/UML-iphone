@@ -1,5 +1,6 @@
 # UML-iphone
-desafio diagrama UML iphone 
+
+Desafio diagrama UML iphone
 
 ```mermaid
 classDiagram
@@ -36,8 +37,8 @@ classDiagram
         + navegarHistorico()
     }
 
-    iPhone --|> ReprodutorMusical
-    iPhone --|> AparelhoTelefonico
-    iPhone --|> NavegadorInternet
+    iPhone --|> ReprodutorMusical : usa
+    iPhone --|> AparelhoTelefonico : usa
+    iPhone --|> NavegadorInternet : usa
 
 ```
