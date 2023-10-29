@@ -40,4 +40,4 @@ classDiagram
     iPhone --|> AparelhoTelefonico
     iPhone --|> NavegadorInternet
 
----
+```
