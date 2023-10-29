@@ -18,27 +18,29 @@ classDiagram
         + fecharSite()
         + navegarHistorico()
     }
-
-    interface ReprodutorMusical {
+    class ReprodutorMusical {
+        <<interface>>
         + tocarMusica(musica: String)
         + pausarMusica()
         + avancarMusica()
     }
 
-    interface AparelhoTelefonico {
+    class AparelhoTelefonico {
+        <<interface>>
         + fazerChamada(numero: String)
         + receberChamada(numero: String)
         + encerrarChamada()
     }
 
-    interface NavegadorInternet {
+    class NavegadorInternet {
+        <<interface>>
         + abrirSite(url: String)
         + fecharSite()
         + navegarHistorico()
     }
 
-    iPhone --|> ReprodutorMusical : usa
-    iPhone --|> AparelhoTelefonico : usa
-    iPhone --|> NavegadorInternet : usa
+    iPhone --|> ReprodutorMusical   
+    iPhone --|> AparelhoTelefonico  
+    iPhone --|> NavegadorInternet   
 
 ```
